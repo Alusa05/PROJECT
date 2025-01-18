@@ -75,3 +75,33 @@ nav a:hover {
     85% { transform: translateX(-75%); }
     100% { transform: translateX(0); }
 }
+/* Team Members Section */
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circular shape */
+    border: 3px solid #ddd; /* Optional: Add a border */
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.team-member h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #666;
+}
+
