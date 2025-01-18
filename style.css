@@ -25,21 +25,16 @@ nav{
     box-sizing: border-box;
 
 }
-nav h1{
-    margin: 0;
-    
-}
-.nav-links {
-    justify-content:space-evenly;
-    display: flex;
-    gap: 15px;
-    margin-left: auto;
-}
-
-.nav-links a {
+nav a{
+    margin: 0 15px;
     color: white;
     text-decoration: none;
+    font-size: 18px;
 }
+nav a:hover{
+    color: #FFD700;
+}
+
 .Home-text h2{
     text-align: center;
 }
