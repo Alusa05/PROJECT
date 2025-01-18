@@ -43,10 +43,10 @@ nav a:hover{
 }
 .image-row{
     display: flex;
-    gap: 10px;
+    
 }
 .image-row img{
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+    width: 1000px;
+    height: 1000px;
+    object-fit:fill;
 }
