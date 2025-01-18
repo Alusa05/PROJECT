@@ -20,4 +20,6 @@ The welcomepage displays a welcome paragraph in the center of the screen.
 There's a button to be interracted that allows a user to see, the slideshow of Formula 1 drivers and the showcasing images of famous F1 figures.
 
 ## Links
+`https://www.figma.com/design/YkAYue9a5i7lRF4u3ZkU7H/Figma-basics?node-id=1669-162202&t=VXx6aLbyR8szquUH-1`
+`https://cars1.com/`
 
