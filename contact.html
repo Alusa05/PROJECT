@@ -4,18 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Contact Us - The Fast Lane</title> 
+    <title>Contact Us - The Fast Lane</title>
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            background-image: url('Images/f1.jpg');
+            color: #333;
+        }
+
+        header {
+            background-color: #f44336;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white;
+            font-size: 2.5em;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            color: #ffeb3b;
+        }
+
+        .contact {
+            background: url('Images/contact-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2.5em;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        /* Form Styling */
+        form {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+            color:#B50909;
+        }
+
+        form ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        form li {
+            margin: 15px 0;
+            text-align: left;
+        }
+
+        form label {
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            font-size: 1em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 5px;
+            background-color: #fff;
+            color: #333;
+        }
+
+        form textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        button[type="submit"] {
+            padding: 12px 25px;
+            font-size: 1.2em;
+            background-color: #f44336;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #d32f2f;
+        }
+
+    </style>
 </head>
 <body>
     <header>
         <nav>
             <h1>The Fast Lane</h1>
-            
-               <a href="F1Web.html">Home</a>
-                <a href="F1Web.html">Gallery</a>
-                <a href="F1Web.html">About Us</a>
-                <a href="contact.html" class="active">Contact Us</a>
-            
+            <a href="F1Web.html">Home</a>
+            <a href="F1Web.html">Gallery</a>
+            <a href="F1Web.html">About Us</a>
+            <a href="contact.html" class="active">Contact Us</a>
         </nav>
     </header>
 
@@ -24,17 +124,19 @@
         <h2>Contact Us</h2>
         <form>
             <ul>
-                <li>            <label for="name">Name:</label> 
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <li>
+                    <label for="name">Name:</label> 
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
                 </li>
                 <li>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 </li>
                 <li>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
                 </li>
+            </ul>
             <button type="submit">Submit</button>
         </form>
     </section>
