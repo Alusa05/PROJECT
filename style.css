@@ -48,14 +48,14 @@ nav a:hover {
 
 .slides {
     display: flex;
-    width: 800%; /* Adjusted to accommodate all the slides */
+    width: 400%; /* Adjusted to accommodate all the slides */
     animation: slide 16s linear infinite; /* Continuous movement */
 }
 
 .slide {
     flex: 1;
-    height: 100vh; /* Make the images the same height as the viewport */
-    background-size: cover; /* Ensure the background image covers the entire slide */
+    height: 100vh; /* Full height */
+    background-size: cover; /* Fill the container while maintaining aspect ratio */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent image repetition */
 }
