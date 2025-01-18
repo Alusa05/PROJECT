@@ -1,12 +1,11 @@
-body{
-    font-family:'Graduate', cursive;
+body {
+    font-family: 'Graduate', cursive;
     margin: 0;
     padding: 0;
-    background-color:#B50909;
+    background-color: #B50909;
 }
 
-
-header{
+header {
     background-color: #B50909;
     color: white;
     padding: 10px 20px;
@@ -15,46 +14,51 @@ header{
     align-items: center;
 }
 
-nav{
+nav {
     background-image: url('Images/4.jpg');
     background-size: cover;
     background-position: center;
     color: red;
     width: 100%;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     padding: 10px 20px;
     box-sizing: border-box;
-
 }
-nav a{
+
+nav a {
     margin: 0 15px;
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
-nav a:hover{
+
+nav a:hover {
     color: #FFD700;
 }
-/*Slideshow Section*/
+
+/* Slideshow Section */
 .slideshow {
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: 100vh; /* Full screen height */
     overflow: hidden;
 }
+
 .slides {
     display: flex;
     width: 400%;
-    animation: slide 12s infinite;
+    animation: slide 16s linear infinite; /* Continuous movement */
 }
+
 .slide {
     flex: 1;
-    height: 100%;
+    height: 100vh; /* Make the images the same height as the viewport */
     background-size: cover;
     background-position: center;
 }
+
 /* Slideshow Animation */
 @keyframes slide {
     0% { transform: translateX(0); }
@@ -63,6 +67,7 @@ nav a:hover{
     75% { transform: translateX(-300%); }
     100% { transform: translateX(0); }
 }
+
 /* Gallery Section */
 .gallery {
     padding: 20px;
@@ -87,10 +92,10 @@ nav a:hover{
     transform: scale(1.1);
 }
 
-.Home-text h2{
+.Home-text h2 {
     text-align: center;
 }
-.Home-text h2:hover{
+
+.Home-text h2:hover {
     visibility: hidden;
 }
-
