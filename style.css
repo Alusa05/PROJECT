@@ -17,7 +17,28 @@ nav{
     background-size: cover;
     background-position: center;
     color: red;
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
 
+}
+nav h1{
+    margin: 0;
+    
+}
+.nav-links {
+    justify-content:space-evenly;
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
 }
 .Home-text h2{
     text-align: center;
