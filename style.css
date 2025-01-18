@@ -4,6 +4,21 @@ body{
     padding: 0;
     background-color:#B50909;
 }
+@keyframes slideshow {
+    0% {
+        background-image: url('Images/Fernando Alonso.jpg');
+    }
+    33% {
+        background-image: url('Images/FA3.jpg');
+    }
+    66% {
+        background-image: url('Images/KR1.jpg');
+    }
+    100% {
+        background-image: url('Images/Kimi Raikkonen.jpg')
+        ;
+    }
+}
 header{
     background-color: #B50909;
     color: white;
