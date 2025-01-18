@@ -48,54 +48,26 @@ nav a:hover {
 
 .slides {
     display: flex;
-    width: 400%;
+    width: 800%; /* Adjusted to accommodate all the slides */
     animation: slide 16s linear infinite; /* Continuous movement */
 }
 
 .slide {
     flex: 1;
     height: 100vh; /* Make the images the same height as the viewport */
-    background-size: cover;
-    background-position: center;
+    background-size: cover; /* Ensure the background image covers the entire slide */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent image repetition */
 }
 
 /* Slideshow Animation */
 @keyframes slide {
     0% { transform: translateX(0); }
-    25% { transform: translateX(-100%); }
-    50% { transform: translateX(-200%); }
-    75% { transform: translateX(-300%); }
+    14% { transform: translateX(-12.5%); }
+    28% { transform: translateX(-25%); }
+    42% { transform: translateX(-37.5%); }
+    57% { transform: translateX(-50%); }
+    71% { transform: translateX(-62.5%); }
+    85% { transform: translateX(-75%); }
     100% { transform: translateX(0); }
-}
-
-/* Gallery Section */
-.gallery {
-    padding: 20px;
-    text-align: center;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-    padding: 10px;
-}
-
-.gallery-grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    transition: transform 0.3s;
-}
-
-.gallery-grid img:hover {
-    transform: scale(1.1);
-}
-
-.Home-text h2 {
-    text-align: center;
-}
-
-.Home-text h2:hover {
-    visibility: hidden;
 }
