@@ -4,21 +4,8 @@ body{
     padding: 0;
     background-color:#B50909;
 }
-@keyframes slideshow {
-    0% {
-        background-image: url('Images/Fernando Alonso.jpg');
-    }
-    33% {
-        background-image: url('Images/FA3.jpg');
-    }
-    66% {
-        background-image: url('Images/KR1.jpg');
-    }
-    100% {
-        background-image: url('Images/Kimi Raikkonen.jpg')
-        ;
-    }
-}
+
+
 header{
     background-color: #B50909;
     color: white;
@@ -27,6 +14,7 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+
 nav{
     background-image: url('Images/4.jpg');
     background-size: cover;
@@ -49,6 +37,55 @@ nav a{
 nav a:hover{
     color: #FFD700;
 }
+/*Slideshow Section*/
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+.slides {
+    display: flex;
+    width: 400%;
+    animation: slide 12s infinite;
+}
+.slide {
+    flex: 1;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+/* Slideshow Animation */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+}
+/* Gallery Section */
+.gallery {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.1);
+}
 
 .Home-text h2{
     text-align: center;
@@ -56,12 +93,4 @@ nav a:hover{
 .Home-text h2:hover{
     visibility: hidden;
 }
-.image-row{
-    display: flex;
-    
-}
-.image-row img{
-    width: 1000px;
-    height: 1000px;
-    object-fit:fill;
-}
+
