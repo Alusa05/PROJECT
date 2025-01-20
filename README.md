@@ -23,6 +23,6 @@ There's a button to be interracted that allows a user to see, the slideshow of F
 (https://www.figma.com/design/YkAYue9a5i7lRF4u3ZkU7H/Figma-basics?node-id=4368-321106&t=nd0xH4ZSmWbcEXcW-1)
 
 
-##License
+## License
 This project is licensed under the MIT License.
 
